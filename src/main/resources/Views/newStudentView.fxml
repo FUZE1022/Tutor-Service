@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NewStudentViewController">
+   <children>
+      <TextField fx:id="newStudentAddStudentIdTf" layoutX="52.0" layoutY="84.0" onKeyTyped="#IdTfOnTyped" prefHeight="25.0" prefWidth="139.0" promptText="Enter Id or Randomize" />
+      <Button fx:id="randomIdBtn" layoutX="81.0" layoutY="112.0" mnemonicParsing="false" onAction="#randomizeId" prefHeight="25.0" prefWidth="85.0" text="Random ID" />
+      <TextField fx:id="newStudentFirstNameTf" layoutX="198.0" layoutY="84.0" onKeyTyped="#firstNameTfOnTyped" prefHeight="25.0" prefWidth="93.0" promptText="First Name" />
+      <TextField fx:id="newStudentLastNameTf" layoutX="300.0" layoutY="84.0" onKeyTyped="#lastNameTfOnTyped" prefHeight="25.0" prefWidth="93.0" promptText="Last Name" />
+      <Button fx:id="addStudentBtn" defaultButton="true" layoutX="248.0" layoutY="188.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="25.0" prefWidth="105.0" text="Add Student" />
+      <VBox layoutX="415.0" layoutY="84.0" prefHeight="142.0" prefWidth="71.0" spacing="8.0">
+         <children>
+            <RadioButton fx:id="cse110Rb" mnemonicParsing="false" text="CSE110" />
+            <RadioButton fx:id="cse118Rb" mnemonicParsing="false" text="CSE118" />
+            <RadioButton fx:id="cse148Rb" mnemonicParsing="false" text="CSE148" />
+            <RadioButton fx:id="cse218Rb" mnemonicParsing="false" text="CSE218" />
+            <RadioButton fx:id="cse222Rb" mnemonicParsing="false" text="CSE222" />
+            <RadioButton fx:id="cse248Rb" mnemonicParsing="false" text="CSE248" />
+         </children>
+      </VBox>
+      <Button fx:id="newStudentBackBtn" layoutX="248.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="105.0" text="Back" />
+   </children>
+</AnchorPane>

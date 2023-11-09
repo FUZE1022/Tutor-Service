@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainViewController">
+   <children>
+      <TextField fx:id="idTfMainView" layoutX="219.0" layoutY="123.0" onKeyTyped="#idKeyTyped" promptText="School Id" />
+      <TextField fx:id="firstNameTfMainView" layoutX="163.0" layoutY="155.0" onKeyTyped="#firstNameKeyTyped" prefHeight="25.0" prefWidth="120.0" promptText="First Name" />
+      <Hyperlink fx:id="adminHlMain" layoutX="246.0" layoutY="254.0" onAction="#adminHlOnAction" text="Admin or Tutor?" />
+      <Button fx:id="enterBtnMain" defaultButton="true" disable="true" layoutX="252.0" layoutY="187.0" mnemonicParsing="false" onAction="#enterBtnOnAction" prefHeight="25.0" prefWidth="81.0" text="Enter" />
+      <TextField fx:id="lastNameTfMainView" layoutX="300.0" layoutY="155.0" onKeyTyped="#lastNameKeyTyped" prefHeight="25.0" prefWidth="120.0" promptText="Last Name" />
+      <Label fx:id="tutorLabel3" layoutX="163.0" layoutY="82.0" prefHeight="30.0" prefWidth="260.0" text="Enter Student Id or First and Last name to log in" wrapText="true" />
+      <Label fx:id="tutorLabel1" layoutX="122.0" layoutY="36.0" prefHeight="35.0" prefWidth="367.0" text="Welcome to The Tutoring Center!">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Hyperlink fx:id="newStudentHl" layoutX="297.0" layoutY="293.0" onAction="#newStudentHlOnAction" text="here." />
+      <Label layoutX="255.0" layoutY="281.0" text="New Student?" />
+      <Label layoutX="256.0" layoutY="296.0" text="Register" />
+      <Button fx:id="logoutBtn" disable="true" layoutX="252.0" layoutY="217.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="81.0" text="Logout" />
+      <Button fx:id="studentQueueBtn" layoutX="239.0" layoutY="341.0" mnemonicParsing="false" onAction="#goToStudentQueue" prefHeight="25.0" prefWidth="113.0" text="Student Queue" />
+   </children>
+</AnchorPane>
